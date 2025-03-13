@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Women in Tech</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap');
+        
+        body {
+            font-family: 'Nunito', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+        header {
+            background: linear-gradient(135deg, #1e1e1e, #6200ea);
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+        }
+        .section {
+            background: #1e1e1e;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 12px;
+            box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+        .section:hover {
+            transform: scale(1.02);
+        }
+        h2 {
+            color: #bb86fc;
+            border-bottom: 2px solid #bb86fc;
+            padding-bottom: 5px;
+        }
+        .interactive-list li {
+            margin: 10px 0;
+            padding: 10px;
+            background: #333;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .interactive-list li:hover {
+            background: #6200ea;
+            color: #fff;
+            font-weight: bold;
+        }
+        .interactive-list li:hover::after {
+            content: attr(data-hover-text);
+            display: block;
+            font-size: 14px;
+            margin-top: 5px;
+            color: #fff;
+            font-weight: normal;
+        }
+        .profile-img {
+            display: block;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 10px auto;
+        }
+        .social-links {
+            text-align: center;
+            margin-top: 10px;
+        }
+        .social-links a {
+            color: #bb86fc;
+            text-decoration: none;
+            font-size: 18px;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+        .social-links a:hover {
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Merin Shaji
+    </header>
+    
+    <div class="container">
+        <div class="section">
+            <h2>About Me</h2>
+            <img src="profile.jpg" alt="Profile Picture" class="profile-img">
+            <p>Hello! I'm Merin Shaji, a second-year IT student at the School of Engineering, Cochin University of Science and Technology. I have done all my schooling in Ernakulam. I am keen to explore the diverse world of tech and its opportunities. I am confident in my teamwork capabilities and organizational skills, having actively participated in community work during my school days.</p>
+            <p>My main area of interest is <strong>Frontend Development</strong>. I love bringing creative designs to life through code and making websites visually appealing and user-friendly.</p>
+            <p>Beyond coding, I enjoy engaging myself in gym and workouts.</p>
+            <div class="social-links">
+                <a href="https://github.com/merinshaji-18" target="_blank">GitHub</a> |
+                <a href="https://www.linkedin.com/in/merin-shaji-164b70355?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">LinkedIn</a>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>Achievements & Experience</h2>
+            <ul>
+                <li>Developed a Lifestyle Modifying Chatbot at Tink-her-hack hackathon.</li>
+                <li>Completed a full-stack development course.</li>
+                <li>Worked with S-Technologies as a part of Internship.</li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h2>Why Women in Tech?</h2>
+            <p>I want to join the Women in Tech team mainly because I believe representation in tech is crucial. For that, mentorship and encouragement are essential, especially for women. Being in this team could encourage the women around us by organizing events like hackathons exclusively for girls, conducting study jam sessions on a weekly basis, and hosting workshops with eminent speakers.</p>
+        </div>
+        
+        <div class="section">
+            <h2>My Contribution</h2>
+            <p>Hover over the points below to see how I plan to contribute:</p>
+            <ul class="interactive-list">
+                <li data-hover-text="Providing guidance and resources to women entering tech">💡 Mentoring and supporting women entering the tech industry.</li>
+                <li data-hover-text="Empowering young girls with coding skills and tech knowledge">🎓 Conducting workshops and coding sessions for young girls.</li>
+                <li data-hover-text="Spreading awareness through blogs and talks about gender diversity">📝 Promoting awareness about diversity through talks and blog posts.</li>
+                <li data-hover-text="Creating inclusive spaces through collaborative events and networking">🤝 Encouraging a culture of collaboration and inclusivity in tech spaces.</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
